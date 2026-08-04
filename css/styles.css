@@ -221,11 +221,28 @@ a:hover {
         gap: 1rem;
     }
 
+    nav ul:first-child {
+        justify-content: center;
+    }
+
+    nav ul:last-child {
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+    /*
     nav ul {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
+    }
+    */
+    .logo {
+        height: 24px;
+        width: auto;
+        max-width: 100%;
+        display: block;
     }
 
     .project-grid {
