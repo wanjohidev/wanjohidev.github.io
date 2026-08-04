@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoliSync - Wanjohi Ian | Backend Developer </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../assets/icons/favicon.png">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="container">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <img src="../assets/wanjohi_ian_namelogo_transparent.png" alt="wanjohi-ian-logo" class="logo">
+                    </a>
+                </li>
+            </ul>
+
+            <ul>
+                <li><a href="../index.html#about">about</a></li>
+                <li><a href="../index.html#projects">projects</a></li>
+                <li><a href="../index.html#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container project-page">
+        <!-- ABOUT PROJECT SECTION -->
+        <section class="project-section">
+            <h2>PoliSync</h2>
+            <p class="tagline">An insurance claims management platform.</p>
+
+            <p>PoliSync is a full-stack insurance claims management web application. </p>
+            
+            <p>Customers can submit and view their own submitted insurance claims, while administrators can view policies, view and manage submitted claims through a dedicated dashboard.</p>
+            
+            <div class="project-footer">
+                <a href="https://polisync.up.railway.app" target="blank" rel="noopener">Live Demo</a>
+                <a href="https://github.com/wanjohidev/polisync" target="blank" rel="noopener">GitHub</a>
+            </div>
+        </section>
+        
+
+        <!-- PORJECT WORKFLOW SECTION -->
+        <section class="project-section">
+            <h2>Using the Application</h2>
+
+            <h3>Customer Flow</h3>
+            <ol>
+                <li>Log in using seeded <i>Customer</i> credentials</li>
+                <li>Submit a new insurance claim</li>
+                <li>View previously sumbitted claims</li>
+                <li>Log out</li>
+            </ol>
+
+            <h3>Administrator Flow</h3>
+            <ol>
+                <li>Log in using seeded <i>Administrator</i> credentials</li>
+                <li>View all insurance policies</li>
+                <li>View all submitted claims</li>
+                <li>Open a claim to view it's details</li>
+                <li>Update the claim status or delete the claim</li>
+                <li>Log out</li>
+            </ol>
+        </section>
+         
+        <!-- CONCEPTS DEMONSTRATED -->
+        <section class="project-section">
+            <h2>Concepts Demonstrated</h2>
+
+            <ul>
+                <li>REST API development with ASP.NET Core</li>
+                <li>Authentication (Cookie-based)</li>
+                <li>Authorisation (Role-based - Customer & Administrator roles)</li>
+                <li>Dependency Injection & Layered Architecture (Repository-Service-Controller Pattern)</li>
+                <li>Seeding Data & Database Migrations using SQLite & Entity Framework Core</li>
+            </ul>
+        </section>
+
+        <!-- TECH STACK -->
+        <section class="project-section">
+            <h2>Tech Stack</h2>
+
+            <ul>
+                <li><strong>Backend: </strong>C#, .NET10, ASP.NET Core Web API, Entity Framework Core, SQLite</li>
+                <li><strong>Frontend: </strong>Semantic HTML5, PicoCSS, Vanilla JavaScript</li>
+            </ul>
+        </section>
+        
+
+        <!-- TEST DATA -->
+         <section class="project-section">
+            <h2>Test Data</h2>
+
+            <p>To test the project, you will need the login credentials for both the Customer and Administrator roles.</p>
+            <p>To make the demonstration easy, the seeded login credentials follow a simple, repeatable pattern.</p>
+    
+            <div class="credentials">
+                <div class="credential-card">
+                    <p><strong>Customers: </strong></p>
+                    <ul>
+                        <li><strong>Email: </strong> first.last@email.com</li>
+                        <li><strong>Password: </strong>First@123!</li>
+                        <li><strong>First Names: </strong>Allan, Beth, Charles, Diana, Edward, Faith, Gerald, Hannah, Ivy, John</li>
+                        <li><strong>Surname: </strong>Doe</li>
+                    </ul>
+                    
+                    <p><strong>Example Customer Credentials:</strong></p>
+                    <ul>
+                        <li><strong>Customer: </strong>Beth Doe // <strong>Email: </strong>beth.doe@email.com // <strong>Password:</strong> Beth@123!</li>
+                        <li><strong>Customer: </strong>Charles Doe // <strong>Email: </strong>charles.doe@email.com // <strong>Password:</strong> Charles@123!</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="credentials">
+                <div class="credential-card">
+                    <p><strong>Administrators: </strong></p>
+                    <ul>
+                        <li><strong>Email: </strong> first.last@email.com</li>
+                        <li><strong>Password: </strong>First@123!</li>
+                        <li><strong>First Names: </strong>Kellen, Larry</li>
+                        <li><strong>Surname: </strong>Smith</li>
+                    </ul>
+                    
+                    <p><strong>Example Administrator Credentials:</strong></p>
+                    <ul>
+                        <li><strong>Administrator: </strong>Kellen Smith // <strong>Email: </strong>kellen.smith@email.com // <strong>Password:</strong> Kellen@123!</li>
+                        <li><strong>Administrator: </strong>Larry Smith // <strong>Email: </strong>larry.smith@email.com // <strong>Password:</strong> Larry@123!</li>
+                    </ul>
+                </div>
+            </div>
+         </section>
+    </main>
+
+    <footer class="container">
+        <small>&copy; <span id="year"></span> Wanjohi Ian</small>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>

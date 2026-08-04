@@ -1,0 +1,321 @@
+/**/
+
+/* === MAIN PAGE === */
+/* RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* DEFINING VARIABLES */
+:root {
+    --background: #FCF8F1;
+    --text: #111111;
+    --card: #f4efe6;
+    --border: #dfd7cb;
+    --max-width: 920px;
+    --transition: 180ms ease;
+    --header-height: 96px;
+}
+
+/* BASE */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
+.logo {
+    max-width: 25%;
+}
+
+main {
+    padding-top: var(--header-height);
+}
+
+.container {
+    width: min(var(--max-width), 90%);
+    margin-inline: auto;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+h1, h2, h3 {
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.landing h1 {
+    margin-bottom: .15rem;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+/* HEADER */
+.site-header {
+    position: fixed;
+    inset: 0 0 auto 0;
+    background: var(--background);
+    transition: transform .3s ease;
+    z-index: 100;
+}
+
+.site-header.hidden {
+    transform: translateY(-100%);
+}
+
+nav {
+    width: min(var(--max-width), 90%);
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3rem 0;
+}
+
+nav a.active {
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+/* LANDING */
+.landing {
+    min-height: unset;
+    padding-block: 8rem 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.status-bar .container {
+    display: flex;
+    gap: .25rem;
+
+    align-items: flex-start;
+    margin: 0;
+    color: #555;
+    font-size: .95rem;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: .45rem;
+}
+
+.status-item .icon {
+    width: 16px;
+    height: 16px;
+    opacity: .75;
+}
+
+/* PROJECTS */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.03);
+}
+
+.project-card h3 {
+    margin-bottom: .75rem;
+}
+
+.project-links {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/* CONTACT */
+.contact-links {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.contact-links li {
+    margin-bottom: .75rem;
+}
+
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* FOOTER */
+footer {
+    padding: 3rem 0;
+}
+
+
+/* LINKS */
+a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 4px;
+
+    transition: 
+        text-underline-offset var(--transition),
+        opacity var(--transition);
+}
+
+a:hover {
+    text-underline-offset: 8px;
+    opacity: .7;
+}
+
+.tagline {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+
+/* MOBILE MEDIA QUERY */
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+
+    .credentials {
+        grid-template-columns: 1fr;
+    }
+
+    .status-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+    }
+}
+
+/* === PROJECT PAGES === */
+.project-page {
+    padding-top: 10rem;
+}
+
+.project-page section {
+    padding: 2.5rem 0;
+}
+
+.project-page h2 {
+    margin-bottom: 1.5rem;
+}
+
+.project-page h3 {
+    margin-top: 2rem;
+    margin-bottom: .75rem;
+    font-size: 1rem;
+}
+
+.project-page p + p {
+    margin-top: 1rem;
+}
+
+.project-page ul, 
+.project-page ol {
+    margin-top: .75rem;
+    margin-left: 1.25rem;
+}
+
+.project-page li {
+    margin-bottom: .5rem;
+}
+
+/* CONTENT BLOCKS */
+.project-section {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.project-section h2 {
+    margin-bottom: .15rem;
+}
+
+.project-section:last-of-type {
+    border-bottom: none;
+}
+
+/* TEST DATA - POLISYNC || DRUG NAMES - DAWALENS */
+.credentials {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.credential-card {
+    background: var(--card);
+    padding: 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.03);
+}
+
+.credential-card p {
+    margin-bottom: .5rem;
+}
+
+/* PROJECT LINKS */
+.project-footer {
+    display: flex;
+    gap: 2rem;
+    padding-top: 1rem;
+}

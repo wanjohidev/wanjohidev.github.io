@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DawaLens - Wanjohi Ian | Backend Developer </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../assets/icons/favicon.png">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="container">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <img src="../assets/wanjohi_ian_namelogo_transparent.png" alt="wanjohi-ian-logo" class="logo">
+                    </a>
+                </li>
+            </ul>
+
+            <ul>
+                <li><a href="../index.html#about">about</a></li>
+                <li><a href="../index.html#projects">projects</a></li>
+                <li><a href="../index.html#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container project-page">
+        <!-- ABOUT PROJECT SECTION -->
+        <section class="project-section">
+            <h2>DawaLens</h2>
+            <p class="tagline">Search for a drug, review the details, send it to a patient.</p>
+
+            <p>DawaLens is a web application that searches the OpenFDA API for drug label information, caches results locally, generates a downloadable PDF from the results and allows you to send it on email.</p>
+            
+            <div class="project-footer">
+                <a href="https://dawalens.up.railway.app" target="blank" rel="noopener">Live Demo</a>
+                <a href="https://github.com/wanjohidev/dawalens" target="blank" rel="noopener">GitHub</a>
+            </div>
+        </section>
+        
+
+        <!-- PORJECT WORKFLOW SECTION -->
+        <section class="project-section">
+            <h2>Using the Application</h2>
+
+            <ol>
+                <li>User searches for a drug</li>
+                <li>Backend checks the SQLite cache</li>
+                <li>If uncached, data is fetched from the OpenFDA API, deserialized into a DTO, and then cached</li>
+                <li>Result is returned to the frontend</li>
+                <li>A PDF can be generated from the result</li>
+                <li>The PDF can be emailed to a given address</li>
+            </ol>
+        </section>
+         
+        <!-- CONCEPTS DEMONSTRATED -->
+        <section class="project-section">
+            <h2>Concepts Demonstrated</h2>
+
+            <ul>
+                <li>Consumption of a free, public API (OpenFDA API)</li>
+                <li>Deserializing nested & variable JSON responses into usable DTOs</li>
+                <li>Caching with SQLite & Entity Framework Core</li>
+                <li>Backend Document Generation (PDF document with QuestPDF and QuestCompanion)</li>
+                <li>External Integration with email sending service (Resend)</li>
+            </ul>
+        </section>
+
+        <!-- TECH STACK -->
+        <section class="project-section">
+            <h2>Tech Stack</h2>
+
+            <ul>
+                <li><strong>Backend: </strong>C#, .NET10, ASP.NET Core Web API, Entity Framework Core, SQLite, QuestPDF, Resend</li>
+                <li><strong>Frontend: </strong>Semantic HTML5, PicoCSS, Vanilla JavaScript</li>
+            </ul>
+        </section>
+        
+
+        <!-- TEST DATA -->
+         <section class="project-section">
+            <h2>Testing the App</h2>
+
+            <p>Search for a medicine using its generic name (rather than its brand name).</p>
+            <p>Some common over-the-counter (OTC) and prescription medicines are provided below.</p>
+            <p><strong>To note:</strong>Since OTC and prescription medicines are labelled differently by the FDA, the information returned (formatting, level of detail, labelling) may vary between medicines.</p> 
+        
+            <div class="credentials">
+                <div class="credential-card">
+                    <p><strong>OTC: Acetaminophen, Ibuprofen, Aspirin, Cetirizine, Loratadine, Diphenhydramine, Loperamide, Omeprazole, Dextromethorphan, Guaifenesin, Phenylephrine</strong></p>
+                </div>
+            </div>
+        
+            <div class="credentials">
+                <div class="credential-card">
+                    <p><strong>Prescrip[tion: Amoxicillin, Metformin, Atorvastatin, Lisinopril, Amlodipine, Losartan, Levothyroxine, Sertraline, Fluoxetine, Prednisone, Gabapentin, Albuterol</strong></p>
+                </div>
+            </div>     
+         </section>
+    </main>
+
+    <footer class="container">
+        <small>&copy; <span id="year"></span> Wanjohi Ian</small>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>

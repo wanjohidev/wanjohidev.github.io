@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanjohi Ian | Backend Software Developer</title>
+    <meta name="description" content="Portfolio of Wanjohi Ian, a backend software developer.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="./assets/icons/favicon.png">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    
+    <header class="site-header">
+        <nav class="container">
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        <img src="./assets/wanjohi_ian_namelogo_transparent.png" alt="wanjohi-ian-logo" class="logo">
+                    </a>
+                </li>
+            </ul>
+     
+
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- LANDING SECTION -->
+        <section id="landing" class="landing container status-bar">
+            <div class="status-item">
+                <img src="./assets/icons/location.png" alt="location-icon" class="icon">
+                <span>Nairobi, Kenya</span>
+            </div>
+
+            <div class="status-item">
+                <img src="./assets/icons/clock.png" alt="clock-icon" class="icon">
+                <span id="clock"></span>
+            </div>
+        </section>
+
+         <!-- ABOUT SECTION -->
+        <section id="about" class="container">
+            <p>
+                Hello! I'm Wanjohi Ian.
+            </p>
+
+            <p>
+               For a long time, I have been curious about the systems behind the technology we use every day 
+               - how applications communicate, how data moves between services and how software works at scale.  
+            </p>
+
+            <p>
+                That curiosity led me to teach myself software development over the past 2 years, beginning with 
+                UX & Product Design. It turned out to be a strategic starting point because it taught me about how software 
+                should feel and behave from the user's perspective. Over time, though, I found myself more drawn to what was happening underneath the surface, 
+                and moved into Backend Development, where I have kept my focus since.
+            </p>
+
+            <p>
+                I'm particularly interested in complex technical challenges, especially with systems that have many moving parts and 
+                evolving business requirements (the kind that enterprise systems produce). I'm also drawn to 
+                backend work that requires systems thinking - beyond building software, designing it to be reliable, maintainable and scalable.
+            </p>
+
+            <p>
+                Currently, I'm looking for an opportunity to turn the self-directed learning into hands-on professional experience. 
+                I'm hoping to join a team that offers strong mentorship and a collaborative learning enviroment, where I can sharpen 
+                what I have learned by working on real production systems. I'm starting with C# and ASP.NET Core, but remain flexible 
+                on technologies. What I am ultimately interested in are the fundamental principles that underpin good software development.
+            </p>
+            
+        </section>
+
+          <!-- PROJECTS SECTION -->
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>PoliSync</h3>
+                    <p>An insurance claims management platform.</p>
+                    <div class="project-links">
+                        <a href="./projects/polisync.html">View Details</a>
+                        <a href="https://polisync.up.railway.app" target="blank" rel="noopener">Live Demo</a>
+                        <a href="https://github.com/wanjohidev/polisync" target="blank" rel="noopener">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>DawaLens</h3>
+                    <p>A drug label results checker.</p>
+                    <div class="project-links">
+                        <a href="./projects/dawalens.html">View Details</a>
+                        <a href="https://dawalens.up.railway.app" target="blank" rel="noopener">Live Demo</a>
+                        <a href="https://github.com/wanjohidev/dawalens" target="blank" rel="noopener">GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <p>Let's connect!</p>
+            <ul class="contact-links">
+                <li>
+                    <img src="./assets/icons/email.png" alt="email-icon" class="icon">
+                    <a href="mailto:iwanjohiw@gmail.com">Email</a>
+                </li>
+                <li>
+                    <img src="./assets/icons/github.png" alt="github-icon" class="icon">
+                    <a href="https://github.com/wanjohidev">GitHub</a>
+                </li>
+                <li>
+                    <img src="./assets/icons/linkedin.png" alt="linkedin-icon" class="icon">
+                    <a href="https://www.linkedin.com/in/iwanjohi/">LinkedIn</a>
+                </li>
+            </ul>    
+        </section>
+    </main>
+
+    <footer class="container">
+        <small>&copy; <span id="year"></span> Wanjohi Ian | Icons from FlatIcon</small>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
